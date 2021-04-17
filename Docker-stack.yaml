@@ -47,12 +47,12 @@ services:
     image: mysql:5.7
     secrets:
       - root
-      - db
+      - dbs
       - user
       - pwd   
     environment:
       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/root
-      MYSQL_DATABASE_FILE : /run/secrets/db
+      MYSQL_DATABASE_FILE : /run/secrets/dbs
       MYSQL_USER_FILE : /run/secrets/user
       MYSQL_PASSWORD_FILE : /run/secrets/pwd
     volumes:
@@ -105,7 +105,7 @@ secrets:
  root:
   file: ./secret/root.txt
  database:
-  file: ./secret/db.txt
+  file: ./secret/dbs.txt
  user:
   file: ./secret/user.txt
  password:

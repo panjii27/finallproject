@@ -23,6 +23,7 @@ services:
       retries: 3
 
   web:
+    image: php:latest
     working_dir: /var/www/html
     volumes:
        - ./file-web:/var/www/html/

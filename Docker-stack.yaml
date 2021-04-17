@@ -43,6 +43,7 @@ services:
       retries: 3
 
   mysql:
+    image: mysql:5.7
     secrets:
       - root
       - database

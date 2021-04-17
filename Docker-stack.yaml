@@ -104,9 +104,9 @@ networks:
 secrets:
  root:
   file: ./secret/root.txt
- database:
+ dbs:
   file: ./secret/dbs.txt
  user:
   file: ./secret/user.txt
- password:
+ pwd:
   file: ./secret/pwd.txt
